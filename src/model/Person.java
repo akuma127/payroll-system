@@ -1,3 +1,5 @@
+package model;
+
 public abstract class Person {
     private String name;
     private String personID;
@@ -19,11 +21,23 @@ public abstract class Person {
         }
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }
 
     public String getPersonID() {
         return personID;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

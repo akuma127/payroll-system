@@ -1,14 +1,15 @@
+package model;
+
 import java.util.Date;
 
 public class Payment {
 
-    // Encapsulation: private fields
+
     private String paymentID;
     private float amount;
     private Date date;
     private PaymentMethod method;
 
-    // Constructor
     public Payment(String paymentID, float amount, Date date, PaymentMethod method) {
         this.paymentID = paymentID;
         this.amount = amount;
@@ -16,7 +17,7 @@ public class Payment {
         this.method = method;
     }
 
-    // Getters
+
     public String getPaymentID() {
         return paymentID;
     }
@@ -33,12 +34,12 @@ public class Payment {
         return method;
     }
 
-    // Returns readable payment info
+
     public String getDetails() {
-        return "Payment ID: " + paymentID +
+        return "model.Payment ID: " + paymentID +
                 "\nAmount: " + amount +
                 "\nDate: " + date +
-                "\nPayment Method: " + method;
+                "\nmodel.Payment Method: " + method;
     }
 }
 
