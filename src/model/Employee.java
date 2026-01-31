@@ -6,7 +6,7 @@ import javafx.collections.ObservableList;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
+//Encapsulation
 public class Employee extends Person {
     private String jobTitle;
     private String EMPLOYEE_FILE_PATH = "Persons.txt";
@@ -21,7 +21,7 @@ public class Employee extends Person {
         super(name, personID, password);
         this.jobTitle = jobTitle;
     }
-
+//Exception
     public String getJobTitle() {
         return jobTitle;
     }

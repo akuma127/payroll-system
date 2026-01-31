@@ -11,7 +11,7 @@ public class DataStore {
 
     public static List<Person> loadPersons() {
         List<Person> personList = new ArrayList<>();
-
+//Exception
         try (BufferedReader br = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
             while ((line = br.readLine()) != null) {
