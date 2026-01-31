@@ -23,6 +23,7 @@ public class Admin extends Person {
 
     public String getJobTitle() { return jobTitle; }
     public void saveEmployeeToFile(String name, String username, String password, String role) {
+        //Exception
         try (BufferedWriter writer = new BufferedWriter(
                 new FileWriter(this.EMPLOYEE_FILE_PATH, true))) {
 
